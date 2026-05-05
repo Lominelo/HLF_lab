@@ -1,0 +1,4 @@
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/CMakeFiles/run_tests.dir
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/CMakeFiles/fourier_app.dir
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/CMakeFiles/ZERO_CHECK.dir

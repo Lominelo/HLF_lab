@@ -1,0 +1,20 @@
+^C:\USERS\USER\DESKTOP\HLF_LAB\NEW_MY\MY\LABWORK7\VIEWER_WINDOW.UI
+setlocal
+C:\Qt\6.11.0\msvc2022_64\bin\uic.exe -o C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/ui_viewer_window.h C:/Users/User/Desktop/hlf_lab/new_my/my/labwork7/viewer_window.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\HLF_LAB\NEW_MY\MY\LABWORK8\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Desktop/hlf_lab/new_my/my/labwork8 -BC:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build --check-stamp-file C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

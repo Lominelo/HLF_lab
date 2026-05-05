@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBOOST_AVAILABLE -DFFTW_AVAILABLE @CMakeFiles/labwork4.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\labwork4.dir\\main.cpp.obj -c C:\\Users\\User\\Desktop\\hlf_lab\\new_my\\my\\labwork4\\main.cpp",
+  "file": "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/main.cpp",
+  "output": "CMakeFiles/labwork4.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBOOST_AVAILABLE -DFFTW_AVAILABLE @CMakeFiles/labwork4.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\labwork4.dir\\real_matrix.cpp.obj -c C:\\Users\\User\\Desktop\\hlf_lab\\new_my\\my\\labwork4\\real_matrix.cpp",
+  "file": "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/real_matrix.cpp",
+  "output": "CMakeFiles/labwork4.dir/real_matrix.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBOOST_AVAILABLE -DFFTW_AVAILABLE @CMakeFiles/labwork4.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\labwork4.dir\\complex_array.cpp.obj -c C:\\Users\\User\\Desktop\\hlf_lab\\new_my\\my\\labwork4\\complex_array.cpp",
+  "file": "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/complex_array.cpp",
+  "output": "CMakeFiles/labwork4.dir/complex_array.cpp.obj"
+}
+]

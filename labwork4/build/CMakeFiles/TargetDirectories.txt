@@ -1,0 +1,3 @@
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build/CMakeFiles/labwork4.dir
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build/CMakeFiles/rebuild_cache.dir

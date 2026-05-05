@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewerWindow</class>
+ <widget class="QMainWindow" name="ViewerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab 7 — Optimized FFT Spectrum</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QWidget" name="ctrlPanel">
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="ctrlLayout">
+       <item>
+        <widget class="QGroupBox" name="groupShape">
+         <property name="title">
+          <string>Форма</string>
+         </property>
+         <layout class="QHBoxLayout" name="shapeLayout">
+          <item>
+           <widget class="QRadioButton" name="rbCircle">
+            <property name="text">
+             <string>Круг</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbSquare">
+            <property name="text">
+             <string>Квадрат</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupGrid">
+         <property name="title">
+          <string>Сетка</string>
+         </property>
+         <layout class="QVBoxLayout" name="gridLayout_2">
+          <item>
+           <widget class="QComboBox" name="cbSize">
+            <item>
+             <property name="text">
+              <string>64</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>128</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>256</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>512</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1024</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupSteps">
+         <property name="title">
+          <string>Шаги</string>
+         </property>
+         <layout class="QFormLayout" name="stepsFormLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelStepX">
+            <property name="text">
+             <string>Шаг X (мм):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="edStepX"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelStepFreq">
+            <property name="text">
+             <string>Шаг частоты (1/мм):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="edStepFreq">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="diameterFormLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="labelDiameter">
+           <property name="text">
+            <string>Диаметр (мм):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="edDiameter"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="chkLogScale">
+         <property name="text">
+          <string>Лог. шкала</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnCompute">
+         <property name="text">
+          <string>Вычислить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnReset">
+         <property name="text">
+          <string>Сброс</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTime">
+         <property name="text">
+          <string>Время: —</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="ctrlSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="plotGrid">
+      <item row="0" column="0">
+       <widget class="QCustomPlot" name="plotFunc">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCustomPlot" name="plotSpectrum">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCustomPlot" name="plotSections">
+        <property name="minimumSize">
+         <size>
+          <width>620</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

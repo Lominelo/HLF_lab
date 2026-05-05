@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::boost::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__boost-Debug-79bb7cfeb0d6aa4f6dbb.json",
+					"name" : "Boost::boost",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::diagnostic_definitions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__diagnostic_definitions-Debug-7989ae01e590993a0bdc.json",
+					"name" : "Boost::diagnostic_definitions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::disable_autolinking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__disable_autolinking-Debug-8733b2a9087ef8232d61.json",
+					"name" : "Boost::disable_autolinking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::dynamic_linking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__dynamic_linking-Debug-0d5cd72caca2295157a0.json",
+					"name" : "Boost::dynamic_linking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Boost::headers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Boost__headers-Debug-d68b4ba673843392bc28.json",
+					"name" : "Boost::headers",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "labwork4",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "labwork4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-labwork4-Debug-4c7205e6de7e91ea9fb6.json",
+					"name" : "labwork4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4/build",
+		"source" : "C:/Users/User/Desktop/hlf_lab/new_my/my/labwork4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

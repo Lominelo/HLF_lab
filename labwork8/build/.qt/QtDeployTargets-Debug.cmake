@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_run_tests_FILE C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/Debug/run_tests.exe)
+set(__QT_DEPLOY_TARGET_run_tests_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_run_tests_RUNTIME_DLLS )
+set(__QT_DEPLOY_TARGET_fourier_app_FILE C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/Debug/fourier_app.exe)
+set(__QT_DEPLOY_TARGET_fourier_app_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_fourier_app_RUNTIME_DLLS C:/Qt/6.11.0/msvc2022_64/bin/Qt6PrintSupportd.dll;C:/Qt/6.11.0/msvc2022_64/bin/Qt6Widgetsd.dll;C:/Qt/6.11.0/msvc2022_64/bin/Qt6Guid.dll;C:/Qt/6.11.0/msvc2022_64/bin/Qt6Cored.dll)

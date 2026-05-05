@@ -1,0 +1,10 @@
+^C:\USERS\USER\DESKTOP\HLF_LAB\NEW_MY\MY\LABWORK8\BUILD\CMAKEFILES\7217DE32082CBED2017601A198859B0E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Desktop/hlf_lab/new_my/my/labwork8 -BC:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/Desktop/hlf_lab/new_my/my/labwork8/build/labwork8.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
